@@ -1,0 +1,34 @@
+.services {
+    .section-title {
+        max-width: 699px;
+    }
+    .service-card{
+        border-radius: 7px;
+        padding: 40px 60px;
+        background-color: #F1F0F0;
+        transition: all 0.5s;
+        color: var(--secondary);
+        h3{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        p{
+            line-height: 1.87;
+            margin-bottom: 40px;
+        }
+        a{
+            font-size: 18px;
+            font-weight: 500;
+            @include flex();
+            gap: 7px;
+            i{
+                font-size: 14px;
+                transform: rotate(-30deg);
+            }
+        }
+        &:hover{
+            color: white;
+            background-color: var(--secondary);
+        }
+    }
+}

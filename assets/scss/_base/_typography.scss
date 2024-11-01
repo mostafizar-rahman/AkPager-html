@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Work Sans", sans-serif;
+  // line-height: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 300px;
+  font-weight: 600;
+  letter-spacing: -15px;
+  white-space: nowrap;
+  color: var(--secondary);
+  line-height: normal;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -1.44px;
+  color: var(--secondary);
+}
+
+h3 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.54px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // line-height: 0.8;
+  margin-bottom: 0;
+  // line-height: 1;
+}
+
+p{
+  // line-height: 1.6;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.body_line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 14.9%;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray);
+    z-index: -1;
+
+    @include breakpoint(xl) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 14.9%;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray);
+    z-index: -1;
+
+    @include breakpoint(xl) {
+      display: none;
+    }
+  }
+
+  &_one {
+    position: absolute;
+    top: 0;
+    right: 519px;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray);
+
+    // z-index: -1;
+    @include breakpoint(xl) {
+      display: none;
+    }
+  }
+}
+
+.mt_52 {
+  margin-top: 54px;
+}
+
+.mt_54 {
+  margin-top: 58px;
+}
+
+.px_45 {
+  padding: 0 45px;
+}
+
+.outlline_text {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--gray);
+  font-weight: bold;
+  color: transparent;
+}
+
+.outlline_text_blue {
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: var(--pra);
+  font-weight: bold;
+  color: transparent;
+}
+
+.container-fluid {
+  padding: 0 45px;
+
+  @include breakpoint(md) {
+    padding: 0 15px;
+  }
+}
+
+.slick-dots {
+  left: 13% !important;
+  bottom: -19px;
+  text-align: start !important;
+  max-width: 80%;
+
+  @include breakpoint(xxl) {
+    max-width: 70%;
+  }
+
+  @include breakpoint(xl) {
+    max-width: 60%;
+  }
+
+  li {
+    width: auto !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .common__dots {
+    width: 150px;
+    height: 1px;
+    background-color: var(--dipGray);
+
+    @include breakpoint(xxl) {
+      width: 120px;
+    }
+
+    @include breakpoint(xl) {
+      width: 100px;
+    }
+  }
+
+  .slick-active .common__dots {
+    background-color: var(--pra);
+    padding: 2px 0;
+    margin-top: -2px;
+  }
+}
+
+.common__nav {
+  position: absolute;
+  z-index: 100;
+  border: none;
+  background: transparent;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 20px;
+
+  @include breakpoint(sm) {
+    width: 40px;
+    height: 15px;
+  }
+}
+
+.prev-arrow {
+  left: 81%;
+  top: 100%;
+  background-image: url("/assets/img/icon/Group\ 35.svg");
+  transform: rotate(180deg);
+
+  @include breakpoint(xl) {
+    left: 81%;
+  }
+
+  @include breakpoint(lg) {
+    left: 78%;
+  }
+
+  @include breakpoint(md) {
+    left: 74%;
+  }
+
+  @include breakpoint(sm) {
+    left: 70%;
+  }
+
+
+}
+
+.next-arrow {
+  right: 13%;
+  top: 100%;
+  background-image: url("/assets/img/icon/Group\ 35.svg");
+
+  @include breakpoint(xl) {
+    right: 10%;
+  }
+}

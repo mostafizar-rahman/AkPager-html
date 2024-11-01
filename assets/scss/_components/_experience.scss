@@ -1,0 +1,39 @@
+.experience {
+    .section-title {
+        text-align: start;
+    }
+
+    table {
+        width: 100%;
+        border-radius: 7px;
+        border: 1px solid rgba(58, 49, 42, 0.10);
+
+        tbody {
+            .active {
+                background-color: var(--secondary);
+                color: var(--white);
+
+                .position {
+                    font-weight: 600;
+                }
+            }
+
+            tr {
+                border-bottom: 1px solid rgba(58, 49, 42, 0.10);
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+
+                .position {
+                    font-weight: 500;
+                    font-size: 22px;
+                    letter-spacing: -0.66px;
+                }
+
+                td {
+                    padding: 25px 0px;
+                    // width: 100%;
+                }
+            }
+        }
+    }
+}

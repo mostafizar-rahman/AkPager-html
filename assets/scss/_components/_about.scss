@@ -1,0 +1,12 @@
+.about {
+    background-image: url('../../../assets/images/about-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+    .section-title{
+        color: var(--white);
+        max-width: 668px;
+        text-align: start;
+        margin: 0;
+    }
+}

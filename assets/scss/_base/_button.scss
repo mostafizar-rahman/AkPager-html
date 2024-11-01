@@ -1,0 +1,61 @@
+.common_btn {
+  outline: none;
+  @include center();
+  gap: 15px;
+  padding: 12px 32px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1.6px solid var(--white);
+  color: var(--white);
+  transition: all 1s;
+
+  img {
+    height: 15px;
+    object-fit: contain;
+    transition: all 1s;
+  }
+
+  &:hover img {
+    // margin-left: 10px;
+    transform: translateX(10px);
+    // transform: scale(0.9);
+  }
+}
+
+.btn {
+  @include center();
+  gap: 7px;
+  padding: 20px 35px;
+  border-radius: 20px;
+  max-height: 57px;
+  font-weight: 600;
+  font-size: 18px;
+  i{
+    transform: rotate(-30deg);
+    font-size: 14px;
+    // font-weight: 400;
+  }
+}
+
+.btn-sm{
+  @include center();
+  gap: 5px;
+  padding: 10px 20px;
+  max-height: 31px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-xm{
+  @extend .btn-sm;
+  padding: 7px 13px;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+}
+.btn-outline-secondary{
+  border: 1px solid var(--secondary);;
+}

@@ -1,11 +1,21 @@
 .hero {
     background: linear-gradient(180deg, #DED7C4 0%, rgba(222, 215, 196, 0.00) 100%);
-    padding-top: 80px;
+    padding-top: 50px;
     position: relative;
+    // padding-bottom: 400px;
 
     .left-content {
+        position: relative;
+        z-index: 10;
+        margin-left: 100px;
+
+        @include breakpoint(xxl) {
+            margin-left: 0px;
+        }
+
         h6 {
-            font-size: 45px;
+            // font-size: 45px;
+            font-size: clamp(2.1875rem, 2.0433rem + 0.641vw, 2.8125rem);
             letter-spacing: -1.35px;
             font-weight: 400;
         }
@@ -13,35 +23,77 @@
         h5 {
             font-size: 70px;
             font-weight: 600;
-            line-height: 75px;
+            // line-height: 75px;
+            font-size: clamp(2.8125rem, 2.3798rem + 1.9231vw, 4.6875rem);
             letter-spacing: -2.1px;
         }
 
         p {
-            margin-top: 50px;
+            margin-top: 25px;
+            margin-bottom: 45px;
+            max-width: 265px;
+            line-height: 30px;
+            font-weight: 400;
+
+            @include breakpoint(lg) {
+                max-width: 100%;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
         }
     }
 
     .center-img {
-        // position: relative;
+        height: 650px;
 
-        // position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 973px;
-        &-circle {
-        //     position: absolute;
-        //     left: -250px;
-        //     bottom: -80px;
-        //     width: 935px;
-        //     height: 370px;
-        //     transform: rotate(-7deg);
-        //     border-radius: 935px;
-        //     border: 1px solid #3A312A;
-        //     background: #DED7C4;
-        //     z-index: -1;
+        @include breakpoint(lg) {
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 973px;
+            top: 225px;
+
+            @include breakpoint(lg) {
+                position: static;
+                transform: translateX(0);
+            }
         }
     }
 
-    .right-content {}
+    .right-content {
+        position: relative;
+        z-index: 10;
+        margin-right: -80px;
+
+        p {
+            max-width: 331px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-bottom: 30px;
+
+            @include breakpoint(lg) {
+                max-width: 100%;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+        }
+
+        ul {
+            gap: 10px;
+
+            @include breakpoint(lg) {
+                max-width: 500px;
+            }
+
+            .btn {
+                background-color: var(--white);
+                color: var(--secondary);
+            }
+        }
+    }
 }

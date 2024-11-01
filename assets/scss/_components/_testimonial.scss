@@ -1,0 +1,72 @@
+.testimonial {
+    &-card {
+        padding: 50px 40px;
+        border-radius: 7px;
+        background-color: #F1F0F0;
+
+        &-header {
+            strong{
+                font-weight: 600;
+                font-size: 24px;
+                letter-spacing: -0.72px;
+            }
+            
+        }
+
+        .review {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--secondary);
+            letter-spacing: -0.72px;
+            line-height: 40px;
+            margin-top: 25px;
+        }
+
+        &-footer {
+            margin-top: 30px;
+            @include justify();
+
+            ul {
+                @include flex();
+                gap: 5px;
+
+                li {
+                    @include center();
+                    background-color: var(--secondary);
+                    color: var(--white);
+                    font-size: 13px;
+                    padding: 5px;
+                    max-height: 26px;
+                    max-width: 26px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                letter-spacing: -0.54px;
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--secondary)
+            }
+
+        }
+    }
+
+    .arrow-btn {
+        // position: absolute;
+        // bottom: 0;
+        @include center();
+        border: 1px solid var(--secondary);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 50px;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+    }
+}

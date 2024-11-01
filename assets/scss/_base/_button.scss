@@ -17,9 +17,7 @@
   }
 
   &:hover img {
-    // margin-left: 10px;
     transform: translateX(10px);
-    // transform: scale(0.9);
   }
 }
 
@@ -31,14 +29,28 @@
   max-height: 57px;
   font-weight: 600;
   font-size: 18px;
-  i{
+
+  @include breakpoint(lg) {
+    padding: 13px 30px;
+    border-radius: 15px;
+  }
+
+  i {
     transform: rotate(-30deg);
     font-size: 14px;
-    // font-weight: 400;
   }
 }
 
-.btn-sm{
+.btn-lg {
+  @extend .btn;
+  padding: 20px 45px;
+
+  @include breakpoint(lg) {
+    padding: 13px 35px;
+  }
+}
+
+.btn-sm {
   @include center();
   gap: 5px;
   padding: 10px 20px;
@@ -48,7 +60,7 @@
   font-weight: 500;
 }
 
-.btn-xm{
+.btn-xm {
   @extend .btn-sm;
   padding: 7px 13px;
 }
@@ -56,6 +68,8 @@
 .btn-secondary {
   background-color: var(--secondary);
 }
-.btn-outline-secondary{
-  border: 1px solid var(--secondary);;
+
+.btn-outline-secondary {
+  border: 1px solid var(--secondary);
+  ;
 }

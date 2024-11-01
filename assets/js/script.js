@@ -13,3 +13,22 @@ const menu = document.querySelector('.menu')
 menuShowIcon.addEventListener('click', () => [
     menu.classList.toggle('active')
 ])
+
+// 
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+    },
+    breakpoints: {
+        // 640: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20,
+        // },
+        991: {
+            slidesPerView: 2,
+        }
+    }
+});

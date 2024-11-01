@@ -3,10 +3,44 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 130px 0;
-    .section-title{
+
+    .section-title {
         color: var(--white);
         max-width: 668px;
         text-align: start;
         margin: 0;
+    }
+
+    .section-desc {
+        max-width: 807px;
+        color: var(--white);
+        line-height: 1.87;
+    }
+
+    .card-container {
+        background-color: var(--gray);
+        max-width: 960px;
+    }
+
+    &-card {
+        padding: 50px 59px;
+
+        @include breakpoint(lg) {
+            padding: 30px 20px;
+        }
+
+        h4 {
+            letter-spacing: -2.25px;
+            font-weight: 600;
+            // font-size: 75px;
+            font-size: clamp(2.1875rem, 1.6106rem + 2.5641vw, 4.6875rem);
+            // line-height: 70px;
+            color: var(--secondary);
+        }
+
+        svg {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
     }
 }

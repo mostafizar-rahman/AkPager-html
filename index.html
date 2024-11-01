@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akpager</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 </head>
 
 <body>
+    <!-- body line start -->
+    <div class="body-lines">
+        <div class="container-fluid position-relative h-100">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <!-- body line end -->
+
     <header class="header container-fluid py-20">
         <a href="" class="logo">
             <img src="assets/images/logo.png" alt="logo">
@@ -80,33 +92,38 @@
             <div class="overflow-hidden">
                 <h1>Product-Designer</h1>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="left-content">
-                    <h6>Hello, I’m</h6>
-                    <h5>Michael Davis</h5>
-                    <p>Ever-evolving digital landscape our
-                        agency forefront innovation</p>
-                    <div>
-                        <a href="" class="btn btn-secondary">Hire Me</a>
+            <div class="container-fluid overflow-hidden">
+                <div class="d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                    <div class="left-content order-0">
+                        <h6>Hello, I’m</h6>
+                        <h5>Michael Davis</h5>
+                        <p>Ever-evolving digital landscape our
+                            agency forefront innovation</p>
+                        <div class="d-inline-flex">
+                            <a href="" class="btn btn-lg btn-secondary">Hire Me <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="center-img">
-                    <img src="assets/images/hero-1.png" alt="img">
-                    <!-- <div class="center-img-circle"></div> -->
-                </div>
-                <div class="right-content">
-                    <p>A product designer is creative problem high
-                        solver blends innovation functionality</p>
-                    <ul class="d-flex justify-content-between align-items-center">
-                        <li><a href="" class="btn-sm btn-outline-secondary">Facebook</a></li>
-                        <li><a href="" class="btn-sm btn-outline-secondary">Twitter</a></li>
-                        <li><a href="" class="btn-sm btn-outline-secondary">LinkedIn</a></li>
-                        <li><a href="" class="btn-sm btn-outline-secondary">Awwwards</a></li>
-                    </ul>
+                    <div class="center-img order-lg-1 order-2">
+                        <img src="assets/images/hero-1.png" alt="img">
+                        <!-- <div class="center-img-circle"></div> -->
+                    </div>
+                    <div class="right-content order-lg-2 order-1">
+                        <p>A product designer is creative problem high
+                            solver blends innovation functionality</p>
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <li><a href="" class="btn btn-sm btn-outline-secondary">Facebook</a></li>
+                            <li><a href="" class="btn btn-sm btn-outline-secondary">Twitter</a></li>
+                            <li><a href="" class="btn btn-sm btn-outline-secondary">LinkedIn</a></li>
+                            <li><a href="" class="btn btn-sm btn-outline-secondary">Awwwards</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Hero End -->
+
+        <hr class="section-bottom-divider my-110">
 
         <!-- services start -->
         <section class="container services">
@@ -212,57 +229,61 @@
         </section>
         <!-- services end -->
 
+        <hr class="section-bottom-divider my-110">
+
         <!-- Experience start -->
         <section class="container experience">
             <div class="row justify-content-between">
-                <div class="col-lg-5">
-                    <img src="assets/images/experience.png" alt="experience">
+                <div class="col-xl-5 col-lg-6 order-lg-0 order-1">
+                    <img src="assets/images/experience.png" alt="experience" class="">
                 </div>
                 <div class="col-lg-6">
                     <h2 class="section-title">Educations & Experience</h2>
                     <p class="mt-30">By collaborating closely with engineers, marketers, an other stakeholders product
                         designer ensures that each product meets the needs of the market</p>
-                    <table class="mt-50">
-                        <tbody>
-                            <tr class="active">
-                                <td>2021 - Present</td>
-                                <td class="position">Product Designer</td>
-                                <td>Google</td>
-                            </tr>
-                            <tr>
-                                <td>2018-2020</td>
-                                <td class="position">Junior Developer</td>
-                                <td>LinkedIn</td>
-                            </tr>
-                            <tr>
-                                <td>2016-2017</td>
-                                <td class="position">Motion Designer</td>
-                                <td>Apple</td>
-                            </tr>
-                            <tr>
-                                <td>2014-2016</td>
-                                <td class="position">Branding Designer</td>
-                                <td>Dribbble</td>
-                            </tr>
-                            <tr>
-                                <td>2010-2012</td>
-                                <td class="position">UX/UI Designer</td>
-                                <td>Awwards</td>
-                            </tr>
-                            <tr>
-                                <td>2008-2010</td>
-                                <td class="position">Graphics Designer</td>
-                                <td>Microsoft</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="overflow-auto">
+                        <table class="mt-50">
+                            <tbody>
+                                <tr class="active">
+                                    <td>2021 - Present</td>
+                                    <td class="position">Product Designer</td>
+                                    <td>Google</td>
+                                </tr>
+                                <tr>
+                                    <td>2018-2020</td>
+                                    <td class="position">Junior Developer</td>
+                                    <td>LinkedIn</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td class="position">Motion Designer</td>
+                                    <td>Apple</td>
+                                </tr>
+                                <tr>
+                                    <td>2014-2016</td>
+                                    <td class="position">Branding Designer</td>
+                                    <td>Dribbble</td>
+                                </tr>
+                                <tr>
+                                    <td>2010-2012</td>
+                                    <td class="position">UX/UI Designer</td>
+                                    <td>Awwards</td>
+                                </tr>
+                                <tr>
+                                    <td>2008-2010</td>
+                                    <td class="position">Graphics Designer</td>
+                                    <td>Microsoft</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Experience end -->
 
         <!-- Projects Start -->
-        <section class="projects">
+        <section class="projects mt-110 pb-110 pt-50">
             <div class="overflow-hidden">
                 <h1>Works-Projects</h1>
             </div>
@@ -306,12 +327,229 @@
             <div class="container">
                 <h2 class="section-title">Led Cross-Functional Team in
                     Award-Winning Product</h2>
+                <p class="mt-50 section-desc">They take concepts from initial ideation through to final execution,
+                    balancing
+                    aesthetics with
+                    practical considerations to deliver products that not only look great but also enhance the user
+                    experience.</p>
+
+                <div class="d-flex flex-md-row flex-column align-items-lg-center mt-50 rounded-7 card-container">
+                    <div class="about-card">
+                        <small>Project Complete</small>
+                        <h4>150+</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" viewBox="0 0 116 16"
+                            fill="none">
+                            <path
+                                d="M115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9ZM115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9Z"
+                                fill="url(#paint0_linear_45_49)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_45_49" x1="0" y1="8.5" x2="115" y2="8.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A312A" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#3A312A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Designer creative problem solver blends innovation.</p>
+                    </div>
+                    <div class="about-card">
+                        <small>Project Complete</small>
+                        <h4>150+</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" viewBox="0 0 116 16"
+                            fill="none">
+                            <path
+                                d="M115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9ZM115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9Z"
+                                fill="url(#paint0_linear_45_49)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_45_49" x1="0" y1="8.5" x2="115" y2="8.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A312A" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#3A312A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Designer creative problem solver blends innovation.</p>
+                    </div>
+                    <div class="about-card">
+                        <small>Project Complete</small>
+                        <h4>150+</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" viewBox="0 0 116 16"
+                            fill="none">
+                            <path
+                                d="M115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9ZM115.707 8.70711C116.098 8.31658 116.098 7.68342 115.707 7.29289L109.343 0.928932C108.953 0.538408 108.319 0.538408 107.929 0.928932C107.538 1.31946 107.538 1.95262 107.929 2.34315L113.586 8L107.929 13.6569C107.538 14.0474 107.538 14.6805 107.929 15.0711C108.319 15.4616 108.953 15.4616 109.343 15.0711L115.707 8.70711ZM0 9H2.05357V7H0V9ZM6.16071 9H10.2679V7H6.16071V9ZM14.375 9H18.4821V7H14.375V9ZM22.5893 9H26.6964V7H22.5893V9ZM30.8036 9H34.9107V7H30.8036V9ZM39.0179 9H43.125V7H39.0179V9ZM47.2321 9H51.3393V7H47.2321V9ZM55.4464 9H59.5536V7H55.4464V9ZM63.6607 9H67.7679V7H63.6607V9ZM71.875 9H75.9821V7H71.875V9ZM80.0893 9H84.1964V7H80.0893V9ZM88.3036 9H92.4107V7H88.3036V9ZM96.5178 9H100.625V7H96.5178V9ZM104.732 9H108.839V7H104.732V9ZM112.946 9H115V7H112.946V9Z"
+                                fill="url(#paint0_linear_45_49)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_45_49" x1="0" y1="8.5" x2="115" y2="8.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A312A" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#3A312A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Designer creative problem solver blends innovation.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- About end -->
+
+        <!-- Price start -->
+        <section class="container price mt-110">
+            <h2 class="section-title">Easy to Start, Easy to Scale Website Builder Plans</h2>
+            <div class="row mt-70">
+                <div class="col-lg-4">
+                    <div class="price-card rounded-7">
+                        <div class="price-card-head">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65"
+                                fill="none">
+                                <g clip-path="url(#clip0_45_172)">
+                                    <path
+                                        d="M64.9464 10.7135C64.4013 7.46909 61.1128 4.97953 58.7064 3.04916C56.8142 1.53096 54.7075 0.315264 52.2204 0.721435C49.4844 1.16815 47.6958 4.63188 46.9709 6.94938C46.8023 7.48777 47.1112 7.91862 47.5325 8.10161C46.119 8.01664 44.6876 8.50531 43.254 9.9121C39.0114 14.0771 35.8442 19.3319 32.0518 23.8792C30.9617 25.1865 29.8782 26.4798 28.8483 27.8012C28.8046 27.7469 28.7834 27.6891 28.7256 27.6376C20.5744 20.4056 12.8335 12.7687 4.79822 5.42307C4.79434 5.42977 4.79046 5.43612 4.78658 5.44282C4.5567 5.20835 4.27111 5.17521 4.02008 5.25454C3.76446 5.02466 3.32938 5.01443 3.08081 5.38535C-0.14035 10.191 -0.044449 16.9425 0.0197203 22.5069C0.109628 30.2679 0.743917 38.0116 0.836645 45.7792C0.882833 49.6502 0.0680234 58.5902 3.04308 61.7831C5.18993 64.0872 9.22132 62.7601 12.0173 62.8779C21.3201 63.2721 30.5774 64.1711 39.8978 64.2413C43.2839 64.2663 56.3939 65.3974 57.2143 60.0308C57.2591 59.7389 57.1893 59.4903 57.0715 59.2766C57.4016 58.9167 57.4555 58.2464 57.1234 57.829C54.7868 54.892 51.6863 52.3421 49.1999 49.4679C46.4 46.2316 43.7113 42.8863 40.744 39.8006C42.8231 37.7743 45.1057 35.944 47.3541 34.0172C50.546 31.2812 53.4061 27.9215 56.2172 24.7945C57.4509 23.4219 58.3655 22.228 58.9332 21.1178C59.1461 20.969 59.2748 20.7197 59.2321 20.4546C59.6122 19.4825 59.6782 18.5651 59.4296 17.6389C59.7956 17.7676 60.2176 17.7513 60.5913 17.4428C62.5214 15.8502 65.4315 13.6004 64.9464 10.7135ZM38.8016 18.8962C39.3763 18.0563 40.6082 16.0734 42.1085 14.2273C43.9376 16.218 45.9071 18.0715 47.8639 19.9359C48.2246 20.28 48.5836 20.6397 48.9425 21C45.8137 22.1392 43.4606 25.4767 41.5729 28.017C38.6306 31.9747 36.2239 36.2522 32.3618 39.411C31.7493 38.721 30.7871 38.4301 29.6973 38.5655C31.5455 36.4066 32.7859 33.7591 34.3545 31.4004C37.4537 26.741 41.0937 22.5383 45.2295 18.7777C46.0898 17.9953 44.8258 16.7557 43.9616 17.5102C40.3371 20.6742 37.2136 24.2585 34.3433 28.1108C32.2341 30.9406 30.7001 34.1434 28.6452 36.9972C27.8734 36.1662 26.7596 35.7177 25.5496 35.8598C29.7276 30.0112 34.748 24.8181 38.8016 18.8962ZM22.8347 47.405C22.9655 46.9128 23.1059 46.4241 23.2423 45.9333C23.9584 46.6903 24.6537 47.467 25.404 48.1905C25.4918 48.2751 25.5841 48.3605 25.6744 48.4458C25.4008 48.5382 25.1343 48.645 24.8578 48.7233C24.5271 48.4606 24.1714 48.2237 23.8364 47.9948C23.517 47.7752 23.1824 47.5753 22.8347 47.405ZM23.6259 49.0103C23.2078 49.0868 22.7924 49.1449 22.3887 49.1636C22.4561 48.8505 22.5488 48.5424 22.625 48.2311C22.9243 48.4341 23.2123 48.6556 23.4881 48.8847C23.536 48.9246 23.5797 48.969 23.6259 49.0103ZM23.6259 45.1841C23.5783 45.1375 23.5272 45.1079 23.4757 45.0896C23.5938 44.669 23.7088 44.2466 23.8258 43.8259C23.9344 43.8376 24.0381 43.8623 24.1442 43.8795C24.1213 43.9987 24.1446 44.1309 24.2521 44.254C25.3074 45.4616 26.5439 46.6159 27.8463 47.6088C27.4927 47.7632 27.145 47.9194 26.7685 48.0675C26.4444 47.8418 26.1229 47.6126 25.8271 47.3468C25.0627 46.66 24.3621 45.9016 23.6259 45.1841ZM19.7222 49.9925C19.5864 50.8624 20.0603 51.4462 20.9171 51.5608C23.8428 51.9532 27.005 50.5757 29.631 49.463C30.5509 49.073 32.1425 48.4292 33.4749 47.5696C34.9684 49.0868 38.2699 51.3969 34.4035 51.729C32.0268 51.9328 29.6247 51.9324 27.2416 52.1376C23.6739 52.4451 14.2244 54.3324 12.8074 49.775C10.7328 43.1028 12.0702 34.9279 12.6882 27.8076C14.1906 29.3808 15.7994 30.8757 17.4325 32.2959C19.1475 33.788 21.0676 35.6549 23.151 36.6027C23.2769 36.6598 23.4045 36.6876 23.53 36.6947C22.5819 41.2274 20.4376 45.4083 19.7222 49.9925ZM33.3088 44.1672C33.2203 44.3065 33.1907 44.4518 33.2002 44.591C32.9745 44.7832 32.7496 44.9778 32.5084 45.1538C31.7091 45.7373 30.827 46.2115 29.9346 46.649C28.9188 44.4313 26.5044 42.9593 24.0896 42.8556C24.5737 40.9845 24.9142 39.0947 24.8635 37.1435C26.6764 36.7779 28.1442 37.7094 27.9119 39.6973C27.8466 40.2561 28.5384 40.7476 29.0482 40.5628C30.351 40.09 31.365 40.1708 31.2328 41.8219C31.2028 42.1967 31.5318 42.6388 31.9055 42.7058C32.9604 42.8927 34.0256 43.0397 33.3088 44.1672ZM5.74912 9.06627C5.49668 9.06309 5.25446 9.05957 5.04643 9.04617C4.65789 9.02078 4.15371 8.98165 3.6883 9.0497C3.78667 8.36957 3.87799 7.69086 4.00139 7.00544C4.56622 7.70531 5.16032 8.38403 5.74912 9.06627ZM47.4655 51.2029C49.5281 53.7447 52.1488 57.3766 55.2332 59.0062C55.1517 59.1215 55.0858 59.2611 55.0477 59.4335C54.2368 63.1127 38.7237 61.7525 36.0624 61.689C28.7288 61.5145 21.4131 60.9264 14.0964 60.4409C11.5716 60.273 9.11625 60.2963 6.58509 60.4454C5.4452 60.5128 4.68892 59.2876 4.18861 57.4104C4.38747 57.4196 4.58138 57.4263 4.76226 57.4362C5.81294 57.4951 6.99655 57.5543 7.99117 57.1601C8.47667 56.9673 8.43754 56.2258 7.86354 56.2156C6.92603 56.1997 5.9924 56.3626 5.0556 56.4C4.68152 56.4148 4.31342 56.394 3.94604 56.3689C3.76763 55.4667 3.63682 54.458 3.53705 53.402C3.90232 53.4394 4.26547 53.4644 4.60042 53.4806C5.68672 53.5331 7.39426 53.6096 8.24503 52.8276C8.52004 52.5745 8.41145 51.9853 8.00704 51.9261C7.01946 51.7822 5.94551 52.2311 4.94383 52.3058C4.42625 52.3442 3.9337 52.3245 3.44432 52.2751C3.3805 51.3739 3.33854 50.4495 3.31175 49.53C4.7753 49.8201 6.37072 50.0662 7.70523 49.6333C8.29192 49.4429 8.18439 48.5822 7.56032 48.5614C6.72118 48.5343 5.88275 48.6683 5.03833 48.6538C4.45445 48.6439 3.86988 48.5752 3.28707 48.4962C3.27578 47.863 3.27296 47.2442 3.27296 46.636C3.95979 46.667 4.66494 46.6208 5.32568 46.5902C6.24979 46.5475 7.55856 46.5591 8.23551 45.8363C8.57293 45.4764 8.30955 44.9888 7.86354 44.9383C6.96376 44.8361 5.91942 45.2814 5.01752 45.3865C4.44635 45.4531 3.85824 45.4566 3.27719 45.4958C3.29165 43.9056 3.33149 42.489 3.35935 41.4432C3.51589 41.4506 3.67138 41.4559 3.81417 41.464C4.86662 41.524 5.97583 41.5716 6.94401 41.1121C7.48593 40.8551 7.20175 40.0206 6.6489 40.0227C5.84538 40.0259 5.05525 40.1418 4.25137 40.1866C4.04899 40.1979 3.71968 40.2378 3.38544 40.2603C3.38649 40.1683 3.3879 40.0734 3.3879 40.0005C3.38685 38.655 3.36569 37.3226 3.33361 35.9998C4.68257 36.1764 6.12356 36.1485 7.08998 35.2805C7.46936 34.9396 7.19399 34.1508 6.6489 34.2161C6.00122 34.2936 5.3835 34.471 4.74357 34.5859C4.27288 34.6705 3.78526 34.6903 3.29729 34.6776C3.25357 33.1964 3.19963 31.7286 3.14498 30.2661C3.74718 30.4198 4.38253 30.4466 5.0013 30.4731C5.90708 30.5122 6.91827 30.5161 7.47394 29.6801C7.84415 29.1234 7.14816 28.6312 6.64749 28.8537C6.44335 28.9443 6.00792 28.9048 5.76358 28.9482C5.34965 29.0222 4.9248 29.0406 4.50558 29.0592C4.03101 29.0804 3.57054 29.0924 3.10373 29.1435C3.04308 27.4927 2.98914 25.8501 2.95318 24.2095C3.02651 24.2173 3.1002 24.2212 3.17565 24.2261C3.58112 24.2522 3.98658 24.2843 4.39275 24.2998C5.21461 24.3308 6.20571 24.5099 6.9768 24.1683C7.40201 23.9796 7.40201 23.235 6.9768 23.0467C6.2452 22.7223 5.34718 22.8863 4.56763 22.9099C4.14454 22.9226 3.7225 22.9536 3.30011 22.9808C3.18306 22.9882 3.05507 22.9914 2.93237 23.0062C2.9218 22.3144 2.91615 21.6223 2.91545 20.9305C3.26697 20.9305 3.63048 20.9171 3.97953 20.8762C5.1917 20.7345 6.54771 20.5177 7.22678 19.3919C7.59593 18.7798 6.8869 18.2002 6.31149 18.4766C5.23894 18.9917 4.08531 19.2635 2.92462 19.4709C2.9433 17.7933 3.01347 16.1104 3.12488 14.4205C3.69888 14.5298 4.27499 14.6254 4.85781 14.6962C5.74313 14.8041 6.6482 14.8937 7.36147 14.3024C7.72674 13.9995 7.47323 13.4728 7.10655 13.3363C6.40704 13.0758 5.59505 13.2976 4.85816 13.2979C4.30672 13.2983 3.75459 13.256 3.20351 13.2013C3.28425 12.2208 3.38755 11.236 3.51166 10.2471C4.01338 10.1554 5.44414 10.5961 5.74348 10.661C6.32065 10.7861 6.93485 11.0255 7.51695 11.0587C13.5154 17.617 20.4728 23.4628 27.0724 29.2916C27.2226 29.4242 27.3819 29.5035 27.5431 29.55C26.3108 31.265 25.1935 33.0536 24.2972 35.0101C22.7938 33.5923 20.873 32.5455 19.2018 31.3288C16.9795 29.7112 14.8858 27.9712 12.8155 26.1709C12.8328 25.9234 12.8522 25.6731 12.8666 25.4291C12.9181 24.5494 11.6351 24.4458 11.3865 25.2288C9.52912 31.0799 9.43921 37.848 9.53406 43.9162C9.60704 48.602 9.8542 53.4207 14.9853 54.7263C18.4539 55.6091 22.382 55.1018 25.8923 54.8317C29.1787 54.5785 32.8339 54.7531 36.0578 54.1438C42.0231 53.0166 37.8465 48.5159 35.2638 45.9777C35.2734 45.9643 35.2875 45.9527 35.2966 45.9393C35.6171 45.9231 35.9327 45.7803 36.1488 45.4221C37.1805 43.7142 38.4004 42.2125 39.7271 40.8192C42.1924 44.3622 44.7457 47.8517 47.4655 51.2029ZM48.3544 29.8885C44.2433 34.466 39.0086 37.5934 35.42 42.5662C35.0255 41.7482 33.9434 41.3064 33.0398 41.0787C33.0133 40.8079 32.9537 40.5649 32.8772 40.3365C36.3219 38.4354 38.6927 35.3517 40.9541 32.2028C42.4226 30.1582 43.8512 28.0918 45.4865 26.1744C46.8436 24.5836 48.5688 23.528 50.0933 22.1565C51.0943 23.1652 52.1136 24.1647 53.2073 25.0275C51.4038 26.9628 49.4079 28.7155 48.3544 29.8885ZM54.1624 23.9564C52.6044 22.1283 50.5051 20.6227 48.701 19.0992C46.6179 17.3395 44.5571 15.5551 42.4906 13.7767C42.9014 13.2933 43.3241 12.8223 43.7613 12.3978C45.9572 14.2174 48.0871 16.1224 50.2033 18.0323C51.6157 19.3073 53.4199 21.5306 55.2963 22.5245C54.9536 23.0058 54.5651 23.4832 54.1624 23.9564ZM56.189 21.0825C54.8535 19.5414 52.5568 18.2104 51.1362 17.0987C48.8681 15.3249 46.5763 13.5969 44.1724 12.0145C44.6248 11.6091 45.0849 11.2494 45.545 10.9727C49.3462 13.8642 53.1138 16.7444 56.707 19.8795C56.5811 20.2754 56.4002 20.6781 56.189 21.0825ZM46.2065 10.6367C46.9973 10.2985 47.7776 10.2143 48.5063 10.546C51.0625 11.7092 53.5271 14.0553 55.6203 15.8301C56.4119 16.5014 56.8039 17.2577 56.9069 18.0648C53.6268 15.2265 49.8331 12.9993 46.2065 10.6367ZM58.9564 15.8079C58.8492 15.8971 58.7889 15.9958 58.7276 16.0942C58.1603 15.2255 57.3057 14.3197 56.1277 13.3275C53.6392 11.2307 50.9293 8.65692 48.1358 8.17354C48.3953 8.13229 48.6403 7.99795 48.7979 7.71942C49.8472 5.97627 50.6881 3.59143 52.8392 2.96454C54.4515 2.49455 56.4239 4.18728 57.5528 5.09482C59.333 6.52523 61.1692 8.15344 62.3366 10.1311C63.675 12.3981 60.408 14.6014 58.9564 15.8079Z"
+                                        fill="#3A312A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_45_172">
+                                        <rect width="65" height="65" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <h5 class="mt-30">Regular Plan</h5>
+                            <h2>
+                                $15.00<p>/monthly</p>
+                            </h2>
+                            <p>No credit card required</p>
+                        </div>
+                        <hr>
+                        <div class="price-card-body">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 2 Limited sites available</li>
+                                <li><i class="fa-solid fa-check"></i> 1 GB storage per site</li>
+                                <li><i class="fa-solid fa-check"></i> Up to 5 pages per site</li>
+                                <li><i class="fa-solid fa-check"></i> Free SSL for custom domain</li>
+                                <li><i class="fa-solid fa-check"></i> Connect custom domain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Price end -->
+
+        <!-- testimonials start -->
+        <section class="testimonial mt-70">
+            <div class="overflow-hidden">
+                <h1>Testimonials-Feedback</h1>
+            </div>
+            <div class="container">
+                <div class="row position-relative">
+                    <h2 class="section-title">We’ve 1253+ Customer Feedback</h2>
+                    <div class="swiper mt-70">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center gap-3 testimonial-card-header">
+                                        <img src="assets/images/testimonail/user-1.png" alt="img">
+                                        <p>
+                                            <strong>Dennis J. Lester</strong>
+                                            <small>/ CEO & Founder</small>
+                                        </p>
+                                    </div>
+                                    <p class="review">At vero eoset accusamus iusto dignissimos ducimus blanditiis
+                                        praesentium
+                                        voluptatume
+                                        delenitie corruptie dolores molestias</p>
+                                    <div class="testimonial-card-footer">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <p>4.7/5 on Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center gap-3 testimonial-card-header">
+                                        <img src="assets/images/testimonail/user-2.png" alt="img">
+                                        <p>
+                                            <strong>Dennis J. Lester</strong>
+                                            <small>/ CEO & Founder</small>
+                                        </p>
+                                    </div>
+                                    <p class="review">At vero eoset accusamus iusto dignissimos ducimus blanditiis
+                                        praesentium
+                                        voluptatume
+                                        delenitie corruptie dolores molestias</p>
+                                    <div class="testimonial-card-footer">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <p>4.7/5 on Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="d-flex align-items-center gap-3 testimonial-card-header">
+                                        <img src="assets/images/testimonail/user-1.png" alt="img">
+                                        <p>
+                                            <strong>Dennis J. Lester</strong>
+                                            <small>/ CEO & Founder</small>
+                                        </p>
+                                    </div>
+                                    <p class="review">At vero eoset accusamus iusto dignissimos ducimus blanditiis
+                                        praesentium
+                                        voluptatume
+                                        delenitie corruptie dolores molestias</p>
+                                    <div class="testimonial-card-footer">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <p>4.7/5 on Trustpilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <div class="arrow-btn prev"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="arrow-btn next"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials end -->
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <h2>Have Any project on
+                        your mind! Let’s Talk
+                        your Projects </h2>
+                    <p>Website traffic has increased significantly, and we've seen they substantial boost in engagement
+                        across all our social media best platforms SEO improvements they implemented</p>
+                    <div class="d-flex">
+                        <a href="" class="btn btn-lg">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
